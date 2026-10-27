@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran Kegiatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pendaftaran Kegiatan</h1>
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kegiatan.html">Kegiatan</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Kolom bertanda * wajib diisi.</p>
+
+        <form method="get">
+            <p>
+                <label for="nama">Nama lengkap *</label>
+                <input id="nama" name="nama" autocomplete="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="telepon">Telepon *</label>
+                <input id="telepon" name="telepon" type="tel" autocomplete="tel" required>
+            </p>
+
+            <p>
+                <label for="prodi">Program studi *</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih program studi</option>
+                    <option value="trpl">D4 TRPL</option>
+                    <option value="ti">D3 Teknologi Informasi</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="jumlah">Jumlah tiket (1-5) *</label>
+                <input id="jumlah" name="jumlah" type="number" min="1" max="5" step="1" required>
+            </p>
+
+            <p>
+                <label for="kode">Kode peserta (6 angka) *</label>
+                <input id="kode" name="kode" inputmode="numeric" pattern="[0-9]{6}" aria-describedby="kode-help" required>
+                <small id="kode-help">Contoh: 001234</small>
+            </p>
+
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXPm5M3bpspGeNxDWoxnDCuYvLNz9JCmVQOZ8mt_uMc8NNQsYc54ZNrsI&s=10.jpg"
+                    alt="Air Mancur sebagai lokasi kegiatan" width="300" height="250">
+                <figcaption>Lokasi kegiatan: Air Mancur.</figcaption>
+            </figure>
+
+            <fieldset>
+                <legend>Mode kehadiran *</legend>
+                <input id="luring" name="mode" type="radio" value="luring" required>
+                <label for="luring">Luring</label>
+                <input id="daring" name="mode" type="radio" value="daring">
+                <label for="daring">Daring</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Minat belajar HTML *</legend>
+                <input id="html-ya" name="html" type="radio" value="ya" required>
+                <label for="html-ya">Ya</label>
+                <input id="html-tidak" name="html" type="radio" value="tidak">
+                <label for="html-tidak">Tidak</label>
+            </fieldset>
+
+            <p>
+                <label for="catatan">Catatan (opsional)</label>
+                <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+            </p>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </main>
+</body>
+
+</html>

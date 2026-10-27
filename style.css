@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eaf4f6;
+    color: #12303a;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #0e7490;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+}
+
+main {
+    max-width: 520px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input:not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #c5dce2;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:user-invalid,
+select:user-invalid {
+    border-color: #b42318;
+}
+
+fieldset {
+    margin: 1rem 0;
+    border: 1px solid #c5dce2;
+    border-radius: 6px;
+}
+
+fieldset label {
+    display: inline;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+small {
+    color: #54707a;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    border: 0;
+    border-radius: 6px;
+    background: #0e7490;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0a566b;
+}
